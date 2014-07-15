@@ -1,0 +1,11 @@
+%h1 WELCOME NERDS
+
+- @users.each do |u|
+	= u.name
+	%br
+	= u.description
+	%br
+	%br
+
+%h3 DON'T SEE YOUR NAME?  SIGN UP!
+= button_to "Register", new_user_path, method: :get
